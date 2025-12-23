@@ -1,0 +1,83 @@
+.navigationBar{
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navigationBar .navbarMain .navbarContent{
+    padding: 0rem 8rem;
+}
+
+.navtitle{
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    margin-left: 10rem;
+}
+
+.navlinks .navlink{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+@media(max-width: 768px){
+
+        .navigationBar{
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbarMain .navbarContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigationBar .navbarMain .navbarContent{
+    padding: 0rem 3rem;
+}
+
+.navtitle{
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.navbarContent .navbarToggle{
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 10rem;
+}
+
+.navlinks .navlink{
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+    color: #FF3B30;
+}
+    
+}

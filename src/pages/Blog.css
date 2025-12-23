@@ -1,0 +1,374 @@
+/* Blog page layout */
+.blog-container {
+	padding: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.blog-title {
+	margin: 2rem 0 2rem 0;
+	font-size: 2rem;
+	text-align: left;
+    font-family: "Outfit", sans-serif;
+    color: #3b3b3b;
+    font-weight: 600;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+
+.card {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-media img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	display: block;
+}
+
+.card-body {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	flex: 1;
+}
+
+.card-body h3 {
+	margin: 0;
+	font-size: 1.1rem;
+    font-family: "Outfit", sans-serif;
+    color: #3b3b3b;
+    font-weight: 600;
+}
+
+.subtitle {
+	margin: 0;
+    font-family: "Outfit", sans-serif;
+    color: #3b3b3b;
+    font-weight: 400;
+	font-size: 0.9rem;
+}
+
+.read-btn {
+	margin-top: auto;
+	align-self: start;
+	color: #FF6F61;
+	cursor: pointer;
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.read-btn:hover {
+    opacity: 0.95;
+    text-decoration: underline;
+}
+
+/* Overlay + modal */
+.overlay {
+	position: fixed;
+	inset: 0;
+	background: #ff6e610b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	backdrop-filter: blur(6px);
+}
+
+.post-modal {
+	width: 95vw;
+	height: 95vh;
+	max-width: 1200px;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 18px 60px rgba(0,0,0,0.35);
+	position: relative;
+	overflow: auto;
+	padding: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.close-btn {
+	position: absolute;
+	right: 12px;
+	top: 8px;
+	border: none;
+	background: transparent;
+	font-size: 1.8rem;
+	line-height: 1;
+	cursor: pointer;
+	color: #333;
+}
+
+.post-header {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.post-header-img {
+	width: 140px;
+	height: 120px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.post-header-text h2 {
+	margin: 0 0 0.5rem 0;
+    font-size: 1.8rem;
+    font-family: "Outfit", sans-serif;
+    color: #FF6F61;
+    font-weight: 600;
+}
+
+.post-header-text p {
+	margin: 0;
+    font-family: "Outfit", sans-serif;
+    color: #3b3b3b;
+    font-weight: 400;
+	font-size: 1rem;
+}
+
+.post-content {
+	color: #3b3b3b;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-top: 2rem;
+}
+
+.post-content p {
+	white-space: pre-wrap;
+	margin-bottom: 1rem;
+}
+
+
+
+/*************************************** media query  ***************************************/
+
+@media(max-width: 480px){
+
+	.blog-container {
+	padding: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+
+.card {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-media img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	display: block;
+}
+
+.card-body {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	flex: 1;
+}
+
+.card-body h3 {
+	margin: 0;
+	font-size: 1.1rem;
+    font-family: "Outfit", sans-serif;
+    color: #3b3b3b;
+    font-weight: 600;
+}
+
+.subtitle {
+	margin: 0;
+    font-family: "Outfit", sans-serif;
+    color: #3b3b3b;
+    font-weight: 400;
+	font-size: 0.9rem;
+}
+
+.read-btn {
+	margin-top: auto;
+	align-self: start;
+	color: #FF6F61;
+	cursor: pointer;
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.read-btn:hover {
+    opacity: 0.95;
+    text-decoration: underline;
+}
+
+/* Overlay + modal */
+.overlay {
+	position: fixed;
+	inset: 0;
+	background: #ff6e610b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	backdrop-filter: blur(6px);
+}
+
+.post-modal {
+	width: 95vw;
+	height: 95vh;
+	max-width: 1200px;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 18px 60px rgba(0,0,0,0.35);
+	position: relative;
+	overflow: auto;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.close-btn {
+	position: absolute;
+	right: 12px;
+	top: 8px;
+	border: none;
+	background: transparent;
+	font-size: 1.8rem;
+	line-height: 1;
+	cursor: pointer;
+	color: #333;
+}
+
+.post-header {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+}
+
+.post-header-img {
+	width: 160px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.post-header-text h2 {
+	margin: 1rem 0 0.5rem 0;
+    font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
+    color: #FF6F61;
+    font-weight: 600;
+}
+
+.post-header-text p {
+	margin: 0;
+    font-family: "Outfit", sans-serif;
+    color: #3b3b3b;
+    font-weight: 400;
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+.post-content {
+	color: #3b3b3b;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-top: 2rem;
+}
+
+.post-content p {
+	white-space: pre-wrap;
+	margin-bottom: 2rem;
+}
+
+
+}
+
+/* Tablets / small laptops */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+	.blog-container {
+	padding: 2rem 5rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+	.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+	.blog-container {
+	padding: 2rem 5rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+	.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+    
+}
+
+/* Laptops / small desktops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    
+}
+
+/* Large desktops */
+@media (min-width: 1441px) {
+    
+}
