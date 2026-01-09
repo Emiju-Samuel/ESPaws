@@ -2700,7 +2700,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-left: 20rem;
+    margin-left: 10rem;
 }
 
 .navlinks .navlink{
@@ -3278,11 +3278,20 @@
 
 /* Laptops / small desktops */
 @media (min-width: 1025px) and (max-width: 1440px) {
+
+
     
 }
 
 /* Large desktops */
-@media (min-width: 1441px) {
+@media (min-width: 1600px) {
+
+    .navlinks{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    margin-left: 40rem;
+}
     
 }
 

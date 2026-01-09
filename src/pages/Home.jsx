@@ -147,7 +147,7 @@ const Home = () => {
       {/* The header section starts */}
 
       <div className="heroSection" id="home">
-        <div className="heroSectionContent">
+        <div className="heroSectionContent" data-aos="fade-up">
           <div className="heading">
             <span>Your Pet's Entire World, All In One Place</span>
           </div>
@@ -220,7 +220,7 @@ const Home = () => {
               </span>
             </div>
             <div className="serviceContent">
-              <div className="serviceone">
+              <div className="serviceone" data-aos="fade-up">
                 <div className="serviceLeft">
                   <div className="serviceHeading">
                     <span>Pet Retail & Companionship</span>
@@ -249,7 +249,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="servicetwo">
+              <div className="servicetwo" data-aos="fade-up">
                 <div className="serviceLeft">
                   <div className="serviceHeading">
                     <span>Quality Pet Accessories & Supplies</span>
@@ -277,7 +277,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="servicethree">
+              <div className="servicethree" data-aos="fade-up">
                 <div className="serviceLeft">
                   <div className="serviceHeading">
                     <span>Specialized Stud Services</span>
@@ -305,7 +305,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="servicefour">
+              <div className="servicefour" data-aos="fade-up">
                 <div className="serviceLeft">
                   <div className="serviceHeading">
                     <span>Personalized Pet Consultancy Services</span>
@@ -345,17 +345,17 @@ const Home = () => {
       <div className="pets" id="pets">
         <div className="petsContent">
           <div className="top">
-            <div className="left">
+            <div className="left" data-aos="fade-right">
               <span>Explore Pet Categories</span>
             </div>
-            <div className="right">
+            <div className="right" data-aos="fade-left">
               <Link to="/pets" style={{textDecoration: "none"}}><span>View All</span></Link>{" "}
               <FaArrowRight style={{ color: "#FF6F61" }} />{" "}
             </div>
           </div>
           <div className="bottom">
             <div className="cards">
-              <div className="card" style={{ backgroundColor: "#E0F2F5" }}>
+              <div className="card" data-aos="fade-up" style={{ backgroundColor: "#E0F2F5" }}>
                 <div className="cardContent">
                   <span className="cardIcon">
                     <FaDog />
@@ -363,7 +363,7 @@ const Home = () => {
                   <span className="cardText">Dogs</span>
                 </div>
               </div>
-              <div className="card" style={{ backgroundColor: "#FFE0E7" }}>
+              <div className="card" data-aos="fade-up" style={{ backgroundColor: "#FFE0E7" }}>
                 <div className="cardContent">
                   <span className="cardIcon">
                     <FaCat />
@@ -371,7 +371,7 @@ const Home = () => {
                   <span className="cardText">Cats</span>
                 </div>
               </div>
-              <div className="card" style={{ backgroundColor: "#F0F0FF" }}>
+              <div className="card" data-aos="fade-up" style={{ backgroundColor: "#F0F0FF" }}>
                 <div className="cardContent">
                   <span className="cardIcon">
                     <FaHorse />
@@ -379,7 +379,7 @@ const Home = () => {
                   <span className="cardText">Small Mammals</span>
                 </div>
               </div>
-              <div className="card" style={{ backgroundColor: "#E3F5E3" }}>
+              <div className="card" data-aos="fade-up" style={{ backgroundColor: "#E3F5E3" }}>
                 <div className="cardContent">
                   <span className="cardIcon">
                     <FaDove />
@@ -387,7 +387,7 @@ const Home = () => {
                   <span className="cardText">Birds</span>
                 </div>
               </div>
-              <div className="card" style={{ backgroundColor: "#FFFFE5" }}>
+              <div className="card" data-aos="fade-up" style={{ backgroundColor: "#FFFFE5" }}>
                 <div className="cardContent">
                   <span className="cardIcon">
                     <FaFish />
