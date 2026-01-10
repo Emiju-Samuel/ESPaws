@@ -596,36 +596,21 @@ const Home = () => {
                 <div className="card">
                     <div className="cardContent">
                         <div className="icon">< FaQuoteLeft /></div>
-                        <div className="text"><span>We used [Your Brand Name]'s stud service for our champion 
-                            poodle and were incredibly impressed. The professionalism was top-notch—everything 
-                            was handled cleanly, and the genetic screening gave us total confidence. We also 
-                            took advantage of their behavioral consultancy when one of our older dogs started 
-                            acting out. The advice was practical, not just theoretical, and truly fixed the 
-                            problem. They are experts in every sense of the word</span></div>
+                        <div className="text"><span>ES Paws is my go-to for all things pet. Great products and pets, great prices, and great service.</span></div>
                     </div>
                 </div>
 
                 <div className="card">
                     <div className="cardContent">
                         <div className="icon">< FaQuoteLeft /></div>
-                        <div className="text"><span>We used [Your Brand Name]'s stud service for our champion 
-                            poodle and were incredibly impressed. The professionalism was top-notch—everything 
-                            was handled cleanly, and the genetic screening gave us total confidence. We also 
-                            took advantage of their behavioral consultancy when one of our older dogs started 
-                            acting out. The advice was practical, not just theoretical, and truly fixed the 
-                            problem. They are experts in every sense of the word</span></div>
+                        <div className="text"><span>I was skeptical about online pet shopping but ES Paws delivered! Fast, friendly and lovely pets and pet accessories</span></div>
                     </div>
                 </div>
 
                 <div className="card">
                     <div className="cardContent">
                         <div className="icon">< FaQuoteLeft /></div>
-                        <div className="text"><span>We used [Your Brand Name]'s stud service for our champion 
-                            poodle and were incredibly impressed. The professionalism was top-notch—everything 
-                            was handled cleanly, and the genetic screening gave us total confidence. We also 
-                            took advantage of their behavioral consultancy when one of our older dogs started 
-                            acting out. The advice was practical, not just theoretical, and truly fixed the 
-                            problem. They are experts in every sense of the word</span></div>
+                        <div className="text"><span>"I really like the puppy you delivered to me, i'll be getting another one in the next few weeks"</span></div>
                     </div>
                 </div>
             </div>
@@ -706,16 +691,16 @@ const Home = () => {
                 <div className="policies">
                     <span className="title">Policies</span>
                     <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#contact">Privacy Policy</a></li>
+                        <li><a href="#contact">Terms of Service</a></li>
+                        <li><a href="#contact">Refund Policy</a></li>
                     </ul>
                 </div>
                 <div className="socials">
                     <span className="title">Follow Us</span>
                     <ul>
-                        <li><a href="#">Facebook</a></li>
                         <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
                         <li><a href="#">Tiktok</a></li>
                     </ul>
                 </div>
