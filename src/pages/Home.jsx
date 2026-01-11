@@ -36,6 +36,8 @@ import blog3 from "../assets/blogthirdimg.png";
 
 const Home = () => {
 
+  const FORMDROP_URL = import.meta.env.VITE_FORMDROP_URL;
+
     async function handleSubmit(e) {
       e.preventDefault();
       const form = e.target;
@@ -64,8 +66,15 @@ const Home = () => {
         return;
       }
 
+      if (!FORMDROP_URL) {
+        console.error('FORMDROP_URL is not set:', FORMDROP_URL);
+        console.log('Form endpoint not configured. Please check your environment variables.');
+        return;
+      }
+
       try {
-        const response = await fetch("https://api.formdrop.co/f/4YJez0hM", {
+        console.log('Posting to FORMDROP_URL:', FORMDROP_URL, 'payload:', data);
+        const response = await fetch(FORMDROP_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -73,12 +82,20 @@ const Home = () => {
           },
           body: JSON.stringify(data)
         });
-
         if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+          const respText = await response.text();
+          console.error('Form submission failed:', response.status, respText);
+          throw new Error(`HTTP error! status: ${response.status} - ${respText}`);
         }
 
-        const result = await response.json();
+        // try to parse json, but fall back to text for debugging
+        let result;
+        try {
+          result = await response.json();
+        } catch (err) {
+          result = await response.text();
+        }
+        console.log('Form submit response:', result);
         alert('Form submitted successfully!');
         form.reset();
       } catch (error) {
