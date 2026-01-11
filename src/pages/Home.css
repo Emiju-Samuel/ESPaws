@@ -3284,13 +3284,13 @@
 }
 
 /* Large desktops */
-@media (min-width: 1600px) {
+@media (min-width: 2000px) {
 
     .navlinks{
     display: flex;
     align-items: center;
     gap: 3.5rem;
-    margin-left: 40rem;
+    margin-left: 30rem;
 }
     
 }

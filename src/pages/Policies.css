@@ -1,0 +1,59 @@
+.policiesContent{
+    padding: 2rem 4rem 10rem;
+    font-family: "Outfit", sans-serif;
+    color: #3b3b3b;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.privacyPolicy{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.privacyPolicy .title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff3a30ab;
+}
+
+.privacyPolicy .text{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.termsOfService{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.termsOfService .title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff3a30ab;
+}
+
+.termsOfService .text{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.refundPolicy{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.refundPolicy .title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff3a30ab;
+}
+
+.refundPolicy .text{
+    font-size: 1rem;
+    line-height: 1.6;
+}

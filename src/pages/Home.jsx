@@ -708,17 +708,17 @@ const Home = () => {
                 <div className="policies">
                     <span className="title">Policies</span>
                     <ul>
-                        <li><a href="#contact">Privacy Policy</a></li>
-                        <li><a href="#contact">Terms of Service</a></li>
-                        <li><a href="#contact">Refund Policy</a></li>
+                        <li><a href="/policies">Privacy Policy</a></li>
+                        <li><a href="/policies">Terms of Service</a></li>
+                        <li><a href="/policies">Refund Policy</a></li>
                     </ul>
                 </div>
                 <div className="socials">
                     <span className="title">Follow Us</span>
                     <ul>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="https://www.instagram.com/es_paws?igsh=MWFteGlmNm9oNmJ6cA==">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61580447182982">Facebook</a></li>
+                        <li><a href="https://www.tiktok.com/@es_paws?_r=1&_t=ZS-92ydg3Uquoq">Tiktok</a></li>
                     </ul>
                 </div>
             </div>
