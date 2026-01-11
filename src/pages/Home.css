@@ -30,6 +30,11 @@
     margin-right: 1rem;
     transition: color 0.3s ease;
     color: #e65b50;
+
+    span{
+        text-decoration: none;
+        color: #e65b50;
+    }
 }
 
 .heroSection{

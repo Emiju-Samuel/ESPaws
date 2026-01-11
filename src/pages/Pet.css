@@ -130,6 +130,7 @@
   font-size: 0.9rem;
   font-weight: 600;
   color: #555;
+  font-family: "Outfit", sans-serif;
 }
 
 .category-btn.active .category-label {

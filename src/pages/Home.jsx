@@ -130,11 +130,11 @@ const Home = () => {
                 <Nav.Link href="#about" className="navlink">
                   About
                 </Nav.Link>
-                <Nav.Link href="/pets" className="navlink">
-                  Pets
+                <Nav.Link className="navlink">
+                  <Link to="/pets" style={{textDecoration:"none", color:"#e65b50"}}>Pets</Link>
                 </Nav.Link>
-                <Nav.Link href="/blog" className="navlink">
-                  Blog
+                <Nav.Link className="navlink">
+                  <Link to="/blog" style={{textDecoration:"none", color:"#e65b50"}}>Blog</Link>
                 </Nav.Link>
                 <Nav.Link href="#faqs" className="navlink">
                   FAQs
@@ -699,18 +699,18 @@ const Home = () => {
                 <div className="services">
                     <span className="title">Services & Resources</span>
                     <ul>
-                        <li><a href="/pets">View Available Pets</a></li>
+                        <li><Link to="/pets">View Available Pets</Link></li>
                         <li><a href="#request">Stud Service</a></li>
                         <li><a href="#request">Book a Consultancy</a></li>
-                        <li><a href="/blog">Blog/Guide</a></li>
+                        <li><Link to="/blog">Blog/Guide</Link></li>
                     </ul>
                 </div>
                 <div className="policies">
                     <span className="title">Policies</span>
                     <ul>
-                        <li><a href="/policies">Privacy Policy</a></li>
-                        <li><a href="/policies">Terms of Service</a></li>
-                        <li><a href="/policies">Refund Policy</a></li>
+                        <li><Link to="/policies">Privacy Policy</Link></li>
+                        <li><Link to="/policies">Terms of Service</Link></li>
+                        <li><Link to="/policies">Refund Policy</Link></li>
                     </ul>
                 </div>
                 <div className="socials">

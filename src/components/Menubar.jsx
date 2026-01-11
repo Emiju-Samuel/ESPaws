@@ -25,10 +25,10 @@ const Menubar = () => {
                         <Nav.Link href="/" className="navlink">
                           About
                         </Nav.Link>
-                        <Nav.Link href="/pets" className="navlink">
+                        <Nav.Link href="/" className="navlink">
                           Pets
                         </Nav.Link>
-                        <Nav.Link href="/blog" className="navlink">
+                        <Nav.Link href="/" className="navlink">
                           Blog
                         </Nav.Link>
                         <Nav.Link href="/" className="navlink">
