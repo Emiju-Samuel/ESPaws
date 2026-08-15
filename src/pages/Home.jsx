@@ -591,7 +591,7 @@ const Home = () => {
       <Accordion.Item eventKey="10">
         <Accordion.Header>Where is your physical store located?</Accordion.Header>
         <Accordion.Body>
-          ES Paws is a pet retail/pet store in AKure, Ondo State. Please check our 'Contact Us' page for current store hours and directions.
+          ES Paws is a pet retail/pet store in Akure, Ondo State. Please check our 'Contact Us' page for current store hours and directions.
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
