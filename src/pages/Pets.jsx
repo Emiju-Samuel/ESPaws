@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import Menubar from '../components/Menubar'
-import { FaAccessibleIcon, FaCat, FaDog, FaDove, FaFish, FaFrog, FaOtter } from 'react-icons/fa';
+import { FaAccessibleIcon, FaCartPlus, FaCat, FaDog, FaDove, FaFish, FaFrog, FaOtter, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import "../pages/Pet.css"
 import { PetImages } from '../assets/assets';
 
@@ -143,7 +143,32 @@ const Pets = () => {
       <main className="pets-grid">
           {filteredPets.length > 0 ? (
           filteredPets.map((pet) => (
-            <div key={pet.id} className="pet-card">
+            <div key={pet.id} className="pet-card" style={{ position: 'relative' }}>
+              <a
+                href="tel:+2349139978617"
+                aria-label={`Call about ${pet.title}`}
+                style={{
+                  position: 'absolute',
+                  top: '12px',
+                  right: '12px',
+                  zIndex: 2,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: '33px',
+                  height: '33px',
+                  borderRadius: '50%',
+                  background: 'rgba(255, 255, 255, 0.15)',
+                  color: '#f2994a',
+                  boxShadow: 'box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2)',
+                  textDecoration: 'none',
+                  transition: 'transform 0.2s ease',
+                  backdropFilter: 'blur(12px)',
+                  WebkitBackdropFilter: 'blur(12px)',
+                }}
+              >
+                <FaWhatsapp size={16} />
+              </a>
               <div className="card-image">
                 {(() => {
                   const src = pet.img;
